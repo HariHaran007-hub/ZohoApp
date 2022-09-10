@@ -11,8 +11,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val a= ZCatalystApp.init(applicationContext)
-        Log.d("TAG", "onCreate:${a.getDataStoreInstance()} ")
+        val a= ZCatalystApp.init(applicationContext, ZCatalystSDKConfigs.AccountType.DEVELOPMENT)
+        Log.d("DataStore", "onCreate:${a.getDataStoreInstance()} ")
 
 
 
